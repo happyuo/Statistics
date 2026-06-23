@@ -1,12 +1,15 @@
 # 기초통계학 실습
 R 실습코드 업로드
-
+주석처리한 내용은 README에 업로드X
 
 ## 실행 방법
 R console에서 작성X. 새 편집기에 코드 작성
 R console은 결과 확인용
+주석 #
 
 편집기에서 한 줄 실행: 그 줄에서 ctrl + R, 여러 줄 실행: 여러 줄 드래그 후 ctrl + R
+
+
 
 ## 문법
 
@@ -21,7 +24,26 @@ mean() : 평균 계산 함수
 median() : 중앙값 계산 함수
 
 table() : 테이블 생성. 매개변수: c() 객체
+
+  - read.table(): 테이블 형식의 외부파일로부터 데이터를 읽어 데이터 프레임 생성
+    옵션: "파일이름", header = T/F
+    
+  - cut()함수: 구간 나누기 (시험 미출제)
+    br 시퀀스 함수
+    table(cut(height,br=seq(140,165,5),right=(FALSE))
+
 barplot() : 막대그래프 생성. 매개변수: table() 
   barplot(table())
   
 pie() : 파이 만들기. 매개변수: c() 객체, labels=c()객체 <- 옵션, 파이 요소 이름지정
+hist() : 히스토그램 만들기
+  옵션
+  h1= hist(height, main="Histogram(1)", xlab="height") #레이블 추가
+  h1
+stem() : 줄기-잎 그림 만들기
+  옵션
+  scale, atom 값
+
+boxplot(): 박스 만들기
+  실습시험때 boxplot 그래프는 안그리는데 보는법은 알아야함(출제)
+  중앙값, 제1, 제3사분위수를 보고 값이 어디에 몰려있는지 알수있음
