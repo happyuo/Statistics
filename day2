@@ -1,0 +1,53 @@
+양적 자료 1
+
+* 교재12쪽 신장 자료를 text file로 만드세요
+* height <- read.table("D:r예제/height.txt", header=F)
+* str(height)
+* attach(height)
+* table(height)
+* table(cut(height,br=c(4), right=FALSE))   # br=seq(140,165,5)
+* # 줄기-잎-그림
+* stem(V1, atom=1)  # (atom=10이면 5씩, atom=50이면 100씩)
+* # 상자그림
+
+⸻
+
+양적 자료 2
+
+# 히스토그램
+
+* h1 <- hist(V1, main="Histogram(1)", xlab="Height")
+* hist(V1, freq=F, main="Histogram(2)", xlab="Height")
+* hist(V1, br=c(135,140,145,148,151,154,157,165),
+    main="Histogram(3)", xlab="Height")
+* hist(V1, br=c(135,140,145,148,151,154,157,165),
+    main="Histogram(3)", xlab="Height", freq=F)
+    # 상대도수로 막대를 표현
+
+⸻
+
+그래프와 기술통계
+
+줄기-잎-그림
+
+* Stem(data$money)
+
+상자그림
+
+* boxplot(data$money)
+
+평균
+
+* mean(data$age)
+
+중위수
+
+* median(data$age)
+
+분산
+
+* var(data$age)
+
+표준편차
+
+* sd(data$age)
