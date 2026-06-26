@@ -52,3 +52,10 @@ boxplot(): 박스 만들기
 ### day3
 plot(x,y): 산점도 그래프 생성
 cor(x,y): 표본상관계수 추정값. 모상관계수 하려면 p-value로 확인
+
+---
+### day5
+앞에 d: 단일 (X=x), p: 누적 (X<=x)
+binom 이항분포
+hyper 초기하분포
+pois 포아송분포
